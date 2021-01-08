@@ -52,12 +52,8 @@ pre {
   padding: 10px;
 }
 
-.hidden {
-  visibility: hidden;
-  height: 0;
-}
-
 /* Navbar */
+
 .navbar {
   background-color: var(--primary-color);
   color: #fff;
@@ -83,6 +79,7 @@ pre {
 }
 
 /* Showcase */
+
 .showcase {
   height: 400px;
   background-color: var(--primary-color);
@@ -99,9 +96,9 @@ pre {
 }
 
 .showcase .grid {
-  overflow: visible;
-  grid-template-columns: 55% auto;
+  grid-template-columns: 55% 45%;
   gap: 30px;
+  overflow: visible;
 }
 
 .showcase-text {
@@ -117,6 +114,11 @@ pre {
   z-index: 100;
   justify-self: flex-end;
   animation: slideInFromRight 1s ease-in;
+}
+
+.hidden {
+  visibility: hidden;
+  height: 0;
 }
 
 .showcase-form .form-control {
@@ -145,13 +147,11 @@ pre {
   right: 0;
   left: 0;
   background: #fff;
-  transform: skewY(-3deg);
-  -webkit-transform: skewY(-3deg);
-  -moz-transform: skewY(-3deg);
-  -ms-transform: skewY(-3deg);
+  transform: skewY(-4deg);
 }
 
 /* Stats */
+
 .stats {
   padding-top: 100px;
   animation: slideInFromBottom 1s ease-in;
@@ -172,6 +172,7 @@ pre {
 }
 
 /* Cli */
+
 .cli .grid {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -183,8 +184,9 @@ pre {
 }
 
 /* Cloud */
+
 .cloud .grid {
-  grid-template-columns: 4fr 3fr;
+  grid-template-columns: 4fr, 3fr;
 }
 
 /* Languages */
@@ -258,16 +260,16 @@ pre {
 }
 
 /* Footer */
+
 .footer .social a {
   margin: 0 10px;
 }
 
-/* Animations */
+/* Animation */
 @keyframes slideInFromLeft {
   0% {
     transform: translateX(-100%);
   }
-
   100% {
     transform: translateX(0);
   }
@@ -277,7 +279,6 @@ pre {
   0% {
     transform: translateX(100%);
   }
-
   100% {
     transform: translateX(0);
   }
@@ -287,9 +288,8 @@ pre {
   0% {
     transform: translateY(-100%);
   }
-
   100% {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
@@ -297,9 +297,8 @@ pre {
   0% {
     transform: translateY(100%);
   }
-
   100% {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
@@ -319,7 +318,6 @@ pre {
   .showcase {
     height: auto;
   }
-
   .showcase-text {
     text-align: center;
     margin-top: 40px;
@@ -368,9 +366,5 @@ pre {
   .navbar ul {
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.1);
-  }
-  
-  .showcase-form {
-    width: 300px;
   }
 }
