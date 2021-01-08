@@ -150,6 +150,12 @@ pre {
   transform: skewY(-4deg);
 }
 
+/* Success */
+
+.success-message .card {
+  grid-column: 2 / span 1;
+}
+
 /* Stats */
 
 .stats {
@@ -348,7 +354,8 @@ pre {
   }
 
   .features-main .grid > *:first-child,
-  .features-main .grid > *:nth-child(2) {
+  .features-main .grid > *:nth-child(2),
+  .success-message .grid .card {
     grid-column: 1;
   }
 }
